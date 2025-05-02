@@ -1,0 +1,40 @@
+
+      <div><!-- navbar.component.html -->
+        <nav class="navbar">
+          <div class="navbar__logo-container">
+            <img src="assets/furia_pantera_logo.png" alt="Logo" class="navbar__logo" />
+            <span class="navbar__title">FuriaFan</span>
+          </div>
+        </nav>
+      </div><!-- navbar.component.html -->
+
+      <div class="container">
+
+        <div class="form-container">
+
+          <div class="login-section">
+            <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+              <h2>Entrar</h2>
+              <p>ENTRE COM SEU E-MAIL E SENHA PARA CONTINUAR</p>
+              <input type="email" placeholder="Email" name="email" [(ngModel)]="credentials.email" required/>
+              <input type="password" placeholder="Senha" name="password" [(ngModel)]="credentials.password" required/>
+              <div class="button-group">
+                <button type="submit" [disabled]="!loginForm.valid">Entrar</button>
+                <button class="x-bt" (click)="loginWithTwitter()">Entrar com X</button>
+              </div> <!--button-group-->
+            </form>
+            <a href="">Esqueceu sua senha?</a>
+          </div> <!--login-section-->
+
+          <div class="register-section">
+
+            <h2>Quero me cadastrar</h2>
+            <p>CADASTRE-SE JÁ DE FORMA RÁPIDA E SEGURA</p>
+            <button routerLink="/cadastro">Cadastre-se</button>
+
+          </div> <!--register-section-->
+
+        </div> <!--form-container-->
+      </div> <!--container-->
+
+

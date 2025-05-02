@@ -1,0 +1,57 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #0d0d0d;
+  text-align: center;
+  width: 55rem;
+  height: 40rem;
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+.modal-content .bt-send {
+  margin-top: 8rem;
+  color: #F1F1F1;
+  font-size: 1.5rem;
+  border: none;
+  background-color: black;
+  width: 10rem;
+  height: 3rem;
+  transition: 0.2s;
+}
+.modal-content .bt-send:hover {
+  cursor: pointer;
+  background-color: #101010;
+}
+
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  height: 15rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.selects .select-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+}
+.selects .select-row label {
+  margin: 10px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=modal.component.css.map */

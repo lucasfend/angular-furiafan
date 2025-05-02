@@ -1,0 +1,55 @@
+
+<div><!-- navbar.component.html -->
+  <nav class="navbar">
+    <div class="navbar__logo-container">
+      <img src="assets/furia_pantera_logo.png" alt="Logo" class="navbar__logo" />
+      <span class="navbar__title">FuriaFan</span>
+    </div>
+  </nav>
+</div><!-- navbar.component.html -->
+
+
+
+<div class="container">
+
+  <div class="profile-wrapper">
+
+    <div class="background-profile">
+    </div> <!--background-profile-->
+    <div class="pfp">
+      <img src="assets/user_icon_profile_2.png">
+    </div>
+  </div> <!--profile-wrapper-->
+
+  <div class="content">
+
+    <div class="content-list">
+      <div class="inner-list">
+        <button class="bt-list">Autenticação</button>
+        <button class="bt-list" (click)="logout()">Sair</button>
+      </div>
+    </div> <!--content-list-->
+
+    <div class="main">
+      <div class="main-article">
+        <h2>Seja Autêntico, seja um Furioso</h2>
+
+        <p>Envie agora mesmo seu documento, valide e faça parte da Autênticada da Furia podendo concorrer a prêmios!</p>
+
+        <div class="authbts">
+          <label class="custom-file-upload">
+            <input type="file" (change)="onFileSelected($event)" hidden />
+            Clique aqui para selecionar o arquivo
+          </label><br>
+
+          <button (click)="enviarDocumento()" [disabled]="!arquivoSelecionado">Enviar</button>
+        </div>
+
+    </div> <!--main-->
+
+  </div> <!--content-->
+
+
+
+</div> <!--container-->
+</div>

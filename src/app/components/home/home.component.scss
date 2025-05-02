@@ -1,0 +1,28 @@
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: 'Atkinson Hyperlegible Mono';
+  margin-left: -.2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+    .text-row {
+      width: 55rem;
+      h1 {
+        font-size: 5.5rem;
+        color: #F1F1F1;
+        span {
+          color: #F1F1F1;
+          text-decoration: underline;
+          font-family: Minecraft;
+        }
+      }
+    }
+
+}

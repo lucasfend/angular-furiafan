@@ -1,0 +1,31 @@
+<div class="modal-overlay" *ngIf="isVisible">
+  <div class="modal-content">
+    <div class="header-modal">
+      <h2>Opa perai, estamos quase acabando!</h2>
+      <p>Antes de você prosseguir, queremos saber de onde você conhece a Furia</p>
+    </div> <!--header-modal-->
+
+    <div class="selects">
+
+      <div class="select-row first">
+        <label><input type="checkbox" name="CS" id="CS"/>CounterStrike</label>
+        <label><input type="checkbox" name="Valorant" id="Valorant"/>Valorant</label>
+        <label><input type="checkbox" name="RocketLeague" id="RocketLeague"/>Rocket League</label>
+      </div> <!--select-row-->
+
+      <div class="select-row scnd">
+        <label><input type="checkbox" name="LOL" id="LOL"/>League of Legends</label>
+        <label><input type="checkbox" name="KingsLeague" id="KingsLeague"/>Kings League</label>
+        <label><input type="checkbox" name="R6" id="R6"/>Rainbow Six Siege</label>
+      </div> <!--select-row-->
+
+      <div class="select-row trd">
+        <label><input type="checkbox" name="SuperSmashBros" id="SuperSmashBros"/>Super Smash Bros</label>
+        <label><input type="checkbox" name="Apex" id="Apex"/>Apex Legends</label>
+        <label><input type="checkbox" name="Outro" id="Outro"/>Outro</label>
+      </div> <!--select-row-->
+
+    </div> <!--selects-->
+    <button class="bt-send" (click)="goToLogin()">Continuar</button>
+  </div>
+</div>

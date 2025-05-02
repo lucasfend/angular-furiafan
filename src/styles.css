@@ -1,0 +1,16 @@
+html, body {
+  background-color: #0d0d0d;
+  font-family: "Atkinson Hyperlegible Mono";
+  color: #F1F1F1;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

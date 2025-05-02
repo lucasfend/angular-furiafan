@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div><!-- navbar.component.html -->
+  <nav class="navbar">
+    <div class="navbar__logo-container">
+      <img src="assets/furia_pantera_logo.png" alt="Logo" class="navbar__logo" />
+      <span class="navbar__title">FuriaFan</span>
+    </div>
+  </nav>
+</div><!-- navbar.component.html -->
+
+<div class="container">
+
+  <div class="formwrapper">
+    <form class="formstuff" (ngSubmit)="onSubmit()" #insertForm="ngForm">
+      <h1>Cadastro</h1>
+      <div class="forminput">
+        <div class="row"><label>E-MAIL *</label><input type="email" name="email" [(ngModel)]="formData.email"></div>
+        <div class="row"><label>SENHA *</label><input type="password" name="password" [(ngModel)]="formData.password"/></div>
+        <div class="row"><label>CPF *</label><input type="number" name="cpf" [(ngModel)]="formData.cpf"/></div>
+        <div class="row"><label>NOME COMPLETO *</label><input type="text" name="name" [(ngModel)]="formData.name"/></div>
+        <div class="row"><label>DT. NASCIMENTO *</label><input type="date" name="birthdate" [(ngModel)]="formData.birthdate"/></div>
+        <div class="row"><label>GÊNERO</label><select name="gender">
+                                                <option value="M">Masculino</option>
+                                                <option value="F">Feminino</option>
+                                                <option value="NDA">Outro</option>
+                                                </select> </div>
+        <div class="row"><label>CEP *</label><input type="number" name="cep" [(ngModel)]="formData.cep"/><a>Não sabe seu CEP?</a></div>
+        <div class="row"><label>ENDEREÇO</label><input type="text" name="address" [(ngModel)]="formData.address"/></div>
+      </div>
+
+      <!--<input type="text" name="name" [(ngModel)]="formData.name"/></div>-->
+
+      <button class="btform" type="submit" [disabled]="!insertForm.form.valid">Cadastrar-se</button>
+    </form>
+  </div> <!--formwrapper-->
+
+  <app-modal [isVisible]="showModal"></app-modal>
+</div> <!--container-->
+
+
+
+</body>
+</html>

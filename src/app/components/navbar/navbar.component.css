@@ -1,0 +1,47 @@
+/* navbar.component.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: #000 1px solid;
+  width: 100%;
+  margin-left: -0.8rem;
+}
+.navbar__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar__logo {
+  height: 4rem;
+}
+.navbar__title {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-size: 1.8rem;
+  color: #F1F1F1;
+}
+.navbar__buttons {
+  display: flex;
+  gap: 3rem;
+  margin-right: 1rem;
+}
+.navbar__buttons .navbar__button, .navbar__buttons .navbar__button2 {
+  width: 10rem;
+  height: 3rem;
+  margin-left: -2rem;
+  border: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+.navbar__buttons .navbar__button:hover, .navbar__buttons .navbar__button2:hover {
+  background-color: #101010;
+}
+
+/*# sourceMappingURL=navbar.component.css.map */

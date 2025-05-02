@@ -1,0 +1,194 @@
+body {
+  font-family: "Atkinson Hyperlegible Mono";
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  /* Firefox */
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* navbar.component.scss */
+.navbar {
+  position: fixed;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: #000 1px solid;
+  width: 100%;
+  margin-left: -0.8rem;
+}
+.navbar__menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.navbar__menu-container button {
+  margin-right: 25rem;
+  width: 5rem;
+  padding: 0.9rem 1rem;
+  border: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navbar__menu-container button:hover {
+  background-color: #262626;
+  cursor: pointer;
+}
+.navbar__dropdown {
+  position: absolute;
+  top: 100%;
+  background-color: #000000;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  margin-right: 25rem;
+}
+.navbar__dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+.navbar__dropdown a:hover {
+  background-color: #262626;
+  cursor: pointer;
+}
+.navbar__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar__logo {
+  height: 4rem;
+}
+.navbar__title {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-size: 1.8rem;
+  color: #F1F1F1;
+}
+
+.container {
+  margin-top: 8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.main-content .post-container {
+  background-color: #262626;
+  width: 90%;
+  height: 42rem;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: left;
+  border-radius: 20px;
+}
+.main-content .post-container .titlebug {
+  margin-top: -4.5rem;
+  width: 100%;
+  height: 4rem;
+}
+.main-content .post-container .titlebug .post-title {
+  background-color: #000;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+.main-content .post-container .post {
+  width: 100%;
+  height: 100%;
+}
+.main-content .post-container .post .post-text {
+  width: 90%;
+  height: 7rem;
+  margin: 0 auto;
+}
+.main-content .post-container .post .post-text span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+.main-content .post-container .post .post-img {
+  padding-top: 1rem;
+  width: 25rem;
+  height: 30rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-content .post-container .post .post-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.side-content {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.partidas {
+  background-color: #262626;
+  width: 70%;
+  height: 40rem;
+  display: inline-block;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+.partidas hr {
+  margin-top: 7rem;
+  width: 60%;
+}
+.partidas .bottom-partidas {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+.partidas .bottom-partidas p {
+  text-align: center;
+}
+
+.badges {
+  background-color: #262626;
+  width: 70%;
+  height: 20rem;
+  display: inline-block;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
+.badges h2, .partidas h2 {
+  font-family: Minecraft;
+}
+
+.badges h3, .partidas h3 {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=timeline.component.css.map */

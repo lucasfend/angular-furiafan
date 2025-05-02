@@ -1,0 +1,121 @@
+
+  <nav class="navbar">
+    <div class="navbar__logo-container">
+      <img src="assets/furia_pantera_logo.png" alt="Logo" class="navbar__logo" />
+      <span class="navbar__title">FuriaFan</span>
+    </div>
+
+    <div class="navbar__menu-container">
+      <button (click)="toggleMenu()" class="navbar__menu-button">☰</button>
+      <div class="navbar__dropdown" *ngIf="menuOpen">
+        <a routerLink="/profile" (click)="navigateToProfile()">Perfil</a>
+        <a (click)="logout()">Sair</a>
+      </div>
+    </div>
+
+  </nav>
+
+
+<div class="container">
+
+  <div class="side-content first">
+    <div class="partidas">
+      <div class="top-partidas">
+        <h2>Partidas</h2>
+        <h3>Próximas</h3>
+        <p>Nenhuma partida encontrada.</p>
+      </div> <!--top-partidas-->
+
+      <hr/>
+
+      <div class="bottom-partidas">
+        <h3>Resultados</h3>
+        <p>Furia 0 - 2 The MongolZ (9/4/25)</p>
+        <p>Furia 0 - 2 Virtus.pro (8/4/25)</p>
+        <p>Furia 1 - 2 Complexity (7/4/25)</p>
+      </div> <!--bottom-partidas-->
+
+    </div> <!--partidas-->
+  </div> <!--side-content first-->
+
+  <div class="main-content">
+      <div class="post-container">
+          <div class="titlebug">
+          <h2 class="post-title">FuriaCS</h2>
+            <div class="post">
+
+                <div class="post-text">
+                  <span>{{ tweetContent }}</span>
+                </div>
+
+                <div class="post-img" *ngIf="tweetImageUrl">
+                  <img [src]="tweetImageUrl" alt="Imagem do tweet"/>
+                </div>
+
+            </div> <!--post-->
+          </div> <!--titlebug-->
+        </div> <!--post-container-->
+
+        <div class="post-container">
+          <div class="titlebug">
+            <h2 class="post-title">FuriaCS</h2>
+            <div class="post">
+
+              <div class="post-text">
+                <span>{{ tweetContent }}</span>
+              </div>
+
+              <div class="post-img" *ngIf="tweetImageUrl">
+                <img [src]="tweetImageUrl" alt="Imagem do tweet"/>
+              </div>
+
+            </div> <!--post-->
+          </div> <!--titlebug-->
+        </div> <!--post-container-->
+
+    <div class="post-container">
+      <div class="titlebug">
+        <h2 class="post-title">FuriaCS</h2>
+        <div class="post">
+
+          <div class="post-text">
+            <span>{{ tweetContent }}</span>
+          </div>
+
+          <div class="post-img" *ngIf="tweetImageUrl">
+            <img [src]="tweetImageUrl" alt="Imagem do tweet"/>
+          </div>
+
+        </div> <!--post-->
+      </div> <!--titlebug-->
+    </div> <!--post-container-->
+
+    <div class="post-container">
+      <div class="titlebug">
+        <h2 class="post-title">FuriaCS</h2>
+        <div class="post">
+
+          <div class="post-text">
+            <span>{{ tweetContent }}</span>
+          </div>
+
+          <div class="post-img" *ngIf="tweetImageUrl">
+            <img [src]="tweetImageUrl" alt="Imagem do tweet"/>
+          </div>
+
+        </div> <!--post-->
+      </div> <!--titlebug-->
+    </div> <!--post-container-->
+
+
+
+
+
+  </div> <!--main-content-->
+
+  <div class="side-content scnd">
+
+  </div> <!--side-content scnd-->
+</div> <!--container-->
+
+
